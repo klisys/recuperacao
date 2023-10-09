@@ -1,11 +1,22 @@
-.section {
+:root { 
+    /* Varivaeis */
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-laranja: #f76916;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Poppins', sans-serif;    
+    --botao-azul-efeito: #3c92fa;
+  }
+  .section {
     height: 100vh;
     display: grid;
       grid-template-columns: 50% 50%;
+      align-items: center;
+      text-align: center;
     }
     .imagendefundo {
         background-image: url(img/planodeFundo.jpg);
-
+        background-size: contain; 
     }
     h1 {color: white;
     }
@@ -13,11 +24,68 @@
     h2 {color: white;}
     p {color: white;}
 
-    .botao {
-        display: block;
-        padding: 80px;
-        background-color: orange;
+    .botao { 
+        background-color: var(--botao-laranja);
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 1em;
+        width: 70%;
+        border-radius: 30px;
+        color: var(--branco-principal);
+        text-decoration: none;
+        display: block;  
+        text-align: center;
+        margin: auto;
+      }
+      .botao_secundario {
+        background-color: transparent;
+        text-size-adjust: 5px;
+        border-radius: 30px;
+        border: 2px solid white;
+        border: 2px solid var(--branco-principal);
+      }
 
-    }
+    body {
+        background-color: var(--cor-de-fundo);
+        color: var(--branco-principal);
+        font-family: var(--fonte-principal);  
+        font-size: 16px;
+        font-weight: 400;
+
+      }
+      .container_titulo {
+        font-size: 28px;
+        font-weight: 700;
+      }
+      
+      .container_aviso {
+        font-size: 12px;
+        color: var(--cinza-secundario);
+      }
+      
+      .container_caixa {
+        margin: 0 6em;
+      }
+      
+      .container_imagem {
+        margin: 1em 0 2em 0;
+      }
+
+      .descricao_titulo {
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 0.1em;
+      }
+       
+      .descricao_texto {
+        color: var(--cinza-secundario);
+        line-height: 150%;
+      }
+
+      .container__caixa {
+  margin: 0 6em;
+}
+
+
 
     
