@@ -1,0 +1,23 @@
+.section {
+    height: 100vh;
+    display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .imagendefundo {
+        background-image: url(img/planodeFundo.jpg);
+
+    }
+    h1 {color: white;
+    }
+
+    h2 {color: white;}
+    p {color: white;}
+
+    .botao {
+        display: block;
+        padding: 80px;
+        background-color: orange;
+
+    }
+
+    
